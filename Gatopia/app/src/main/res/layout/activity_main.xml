@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F1"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🐱"
+            android:textSize="64sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GATOPÍA"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#62445B"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cuidamos a quienes nos necesitan"
+            android:textSize="15sp"
+            android:textColor="#9B7789"
+            android:gravity="center"
+            android:paddingBottom="38dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido al refugio"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#62445B"
+            android:paddingBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/campoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de usuario"
+            android:singleLine="true"
+            android:inputType="text"
+            android:textColor="#443748"
+            android:textColorHint="#947E8A"
+            android:padding="14dp"/>
+
+        <EditText
+            android:id="@+id/campoPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:textColor="#443748"
+            android:textColorHint="#947E8A"
+            android:padding="14dp"/>
+
+        <Button
+            android:id="@+id/botonIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INICIAR SESIÓN"
+            android:backgroundTint="#28856B"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="24dp"/>
+
+        <Button
+            android:id="@+id/botonRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CREAR CUENTA"
+            android:backgroundTint="#C7839A"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sistema de seguridad IoT · Gatopía"
+            android:textColor="#9B7789"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:paddingTop="32dp"/>
+
+    </LinearLayout>
+</ScrollView>

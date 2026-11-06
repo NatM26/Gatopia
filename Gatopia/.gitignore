@@ -1,0 +1,22 @@
+# Archivos generados
+.gradle/
+.idea/
+.kotlin/
+**/build/
+local.properties
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Bases de datos
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Credenciales
+.env
+.env.*
+secrets.h

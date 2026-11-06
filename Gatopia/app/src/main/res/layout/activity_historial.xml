@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8F1">
+
+    <!-- Cabecera fija -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="12dp">
+
+        <Button
+            android:id="@+id/botonVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="← VOLVER"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8872B5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🐾 HISTORIAL"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="#62445B"
+            android:paddingTop="14dp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actividad y eventos del refugio"
+            android:textSize="14sp"
+            android:textColor="#9B7789"/>
+
+    </LinearLayout>
+
+    <!-- Solo los eventos se desplazan -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/textoHistorialCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginBottom="22dp"
+            android:background="#FFFFFF"
+            android:text="Cargando eventos..."
+            android:textColor="#62445B"
+            android:textSize="14sp"
+            android:lineSpacingExtra="5dp"
+            android:padding="18dp"/>
+
+    </ScrollView>
+</LinearLayout>

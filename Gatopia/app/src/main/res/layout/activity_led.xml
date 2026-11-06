@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F1"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <!-- Barra superior: cerrar sesión y usuario -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/botonCerrarSesion"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="↪ SALIR"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#C7839A"
+                android:contentDescription="Cerrar sesión"/>
+
+            <TextView
+                android:id="@+id/textoUsuario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hola, Usuario"
+                android:textColor="#A86C80"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:gravity="end"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🐱 GATOPÍA"
+            android:textColor="#62445B"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seguridad inteligente del refugio"
+            android:textColor="#9B7789"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:paddingBottom="28dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ESTADO DEL REFUGIO"
+            android:textColor="#62445B"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/textoEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECE8F2"
+            android:text="CONSULTANDO SERVIDOR..."
+            android:textColor="#62445B"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="26dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTROL DE ALARMA"
+            android:textColor="#62445B"
+            android:textStyle="bold"
+            android:paddingTop="26dp"
+            android:paddingBottom="10dp"/>
+
+        <Button
+            android:id="@+id/botonEncender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTIVAR ALARMA"
+            android:backgroundTint="#28856B"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/botonApagar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DESACTIVAR ALARMA"
+            android:backgroundTint="#B54D60"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MONITOREO"
+            android:textColor="#62445B"
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:paddingBottom="10dp"/>
+
+        <Button
+            android:id="@+id/botonMovimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIMULAR VIBRACIÓN SW-420"
+            android:backgroundTint="#C7839A"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/botonConectar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONSULTAR ESTADO WIFI"
+            android:backgroundTint="#8872B5"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTIVIDAD RECIENTE"
+            android:textColor="#62445B"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:paddingTop="28dp"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/textoHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="Consulta los eventos del refugio"
+            android:textColor="#62445B"
+            android:textSize="13sp"
+            android:padding="16dp"
+            android:maxLines="4"/>
+
+        <Button
+            android:id="@+id/botonHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VER HISTORIAL COMPLETO"
+            android:backgroundTint="#8872B5"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>
